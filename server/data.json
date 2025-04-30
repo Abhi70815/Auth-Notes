@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": "1745929962884",
+      "username": "Abc",
+      "password": "$2b$10$CQ24MktYDVkN5EuiXmqTj.C8IOBW9RtWCsaYCLta525c5El.dAUfa",
+      "role": "User"
+    },
+    {
+      "id": "1745930052542",
+      "username": "Ab",
+      "password": "$2b$10$zPxDCHqoOIOy4UpYHj3xWe.rEeIi5b1e11XBttnfeRDJUzCDwuoNS",
+      "role": "User"
+    }
+  ],
+  "notes": [
+    {
+      "id": "1745929982940",
+      "userId": "1745929962884",
+      "title": "dgdf",
+      "content": "dfgvfd",
+      "createdAt": "2025-04-29T12:33:02.940Z",
+      "updatedAt": "2025-04-29T12:33:02.940Z"
+    },
+    {
+      "id": "1745929990495",
+      "userId": "1745929962884",
+      "title": "dfgfdd",
+      "content": "dfdfd",
+      "createdAt": "2025-04-29T12:33:10.495Z",
+      "updatedAt": "2025-04-29T12:33:10.495Z"
+    },
+    {
+      "id": "1745930058004",
+      "userId": "1745930052542",
+      "title": "srfd",
+      "content": "dsf",
+      "createdAt": "2025-04-29T12:34:18.004Z",
+      "updatedAt": "2025-04-29T12:34:18.004Z"
+    }
+  ]
+}

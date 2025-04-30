@@ -12,9 +12,9 @@ export default function Signup({ setToken }) {
     e.preventDefault()
     setError('')
     try {
-      await axios.post('http://localhost:4000/signup', { username, password })
+      await axios.post('https://auth-notes-1.onrender.com/signup', { username, password })
       // After signup, automatically login
-      const response = await axios.post('http://localhost:4000/login', { username, password })
+      const response = await axios.post('https://auth-notes-1.onrender.com/login', { username, password })
       setToken(response.data.token)
       navigate('/dashboard')
     } catch (err) {

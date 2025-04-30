@@ -22,7 +22,7 @@ export default function Dashboard({ token, onLogout }) {
       setLoading(true)
       setError('')
       try {
-        const response = await axios.get('http://localhost:4000/notes', {
+        const response = await axios.get('https://auth-notes-1.onrender.com/notes', {
           headers: { Authorization: `Bearer ${token}` },
         })
         setNotes(response.data)
@@ -38,7 +38,7 @@ export default function Dashboard({ token, onLogout }) {
   const addNote = async (title, content) => {
     try {
       const response = await axios.post(
-        'http://localhost:4000/notes',
+        'https://auth-notes-1.onrender.com/notes',
         { title, content },
         { headers: { Authorization: `Bearer ${token}` } }
       )
@@ -51,7 +51,7 @@ export default function Dashboard({ token, onLogout }) {
   const updateNote = async (id, title, content) => {
     try {
       const response = await axios.put(
-        `http://localhost:4000/notes/${id}`,
+        `https://auth-notes-1.onrender.com/notes/${id}`,
         { title, content },
         { headers: { Authorization: `Bearer ${token}` } }
       )
@@ -63,7 +63,7 @@ export default function Dashboard({ token, onLogout }) {
 
   const deleteNote = async (id) => {
     try {
-      await axios.delete(`http://localhost:4000/notes/${id}`, {
+      await axios.delete(`https://auth-notes-1.onrender.com/notes/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       setNotes((prev) => prev.filter((note) => note.id !== id))

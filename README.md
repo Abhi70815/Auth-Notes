@@ -25,7 +25,7 @@ This project is a fully functional Authenticated Notes Dashboard application. It
    ```bash
    npm run dev
    ```
-   The server will run on `http://localhost:4000`.
+   The server will run on `https://auth-notes-1.onrender.com`.
 
 ### Frontend
 1. Navigate to the project root directory (if not already there):

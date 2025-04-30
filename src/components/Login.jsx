@@ -11,7 +11,7 @@ export default function Login({ setToken }) {
     e.preventDefault()
     setError('')
     try {
-      const response = await axios.post('http://localhost:4000/login', { username, password })
+      const response = await axios.post('https://auth-notes-1.onrender.com/login', { username, password })
       setToken(response.data.token)
       navigate('/dashboard')
     } catch (err) {
